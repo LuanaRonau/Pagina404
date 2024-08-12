@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: url(Background.png);  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 242.84px;
+    padding-right: 90px;
+    margin: 0 160px;
+}
+
+#qzq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+p {
+    color: #D6D6F2;
+    font-family: 'Outfit', sans-serif;
+}
+
+.titulo {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: light;
+    margin-bottom: 66px;
+    margin-top: 24px;
+}
+
+a {
+    color: #E2E2F5;
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #151557;
+    padding: 12px 24px;
+    border-radius: 999px;
+}
+
+a:hover {
+    background-color: #212187;
+}
+
+a:last-child {
+    margin-left: 16px;
+}
+
+.number {
+    color: #BF7BFB;
+    font-size: 140px;
+}
+
+
+@media screen and (max-width: 1330px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 150px;
+        padding: 0px 30px 0px 20px;
+    }
+
+    .titulo {
+        font-size: 34px;
+    }
+
+    .desc {
+        font-size: 17px;
+        margin-bottom: 60px;
+    }
+
+    a {
+        font-size: 10px;
+        padding: 12px 18px;
+    }
+    
+    #qzq {
+        display: flex;
+        justify-content: center;
+    }
+
+    .number {
+        font-size: 100px;
+    }
+    
+    #planeta {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .container {
+        display: grid;
+        margin: 0 70px 0 100px;
+        gap: 36px;
+        padding: 0;
+    }
+
+    #ops {
+        min-width: 100px;
+    }
+    
+    .desc {
+        margin-bottom: 40px;
+    }
+
+
+    #planeta {
+        width: 120px;
+    }
+
+    .number {
+        font-size: 90px;
+    }
+
+}
+
+
+/* Mobile */
+@media screen and (max-width: 660px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        margin: 0 100px;
+    }
+}
